@@ -6,8 +6,8 @@ const cors = require('cors'); // Nuevo: para manejar CORS
 const app = express();
 const PORT = 3000;
 
-const TELEGRAM_TOKEN = '7953234035:AAE8EecxLronOMYAelTvmSPqspeWv2INBac';
-const TELEGRAM_CHAT_ID = '1904844984';
+const TELEGRAM_TOKEN = '<TU_TOKEN>';
+const TELEGRAM_CHAT_ID = '<TU_CHAT_ID>';
 
 // Middlewares
 app.use(cors()); // Habilitar CORS
