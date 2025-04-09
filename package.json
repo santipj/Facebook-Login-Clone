@@ -1,0 +1,27 @@
+{
+  "name": "facebook-login-clone",
+  "version": "1.0.0",
+  "description": "A responsive clone of Facebook login page using HTML & CSS for computer screen and mobile screen.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashishbhatiam/facebook-login-clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashishbhatiam/facebook-login-clone/issues"
+  },
+  "homepage": "https://github.com/ashishbhatiam/facebook-login-clone#readme",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0"
+  }
+}
