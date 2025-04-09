@@ -69,7 +69,7 @@ Este proyecto **no debe usarse con fines maliciosos**. Fue creado para aprender 
 
 ## 🧑‍💻 Autor
 
-Desarrollado por [Tu Nombre o Usuario](https://github.com/tu-usuario) como parte de su aprendizaje en desarrollo web y ciberseguridad.
+Desarrollado por [Santipj](https://github.com/santipj) como parte de su aprendizaje en desarrollo web y ciberseguridad.
 
 ---
 
