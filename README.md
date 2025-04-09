@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # facebook-login-clone
 
 A responsive clone of Facebook login page using HTML & CSS for computer screen and mobile screen.
@@ -9,3 +10,6 @@ A responsive clone of Facebook login page using HTML & CSS for computer screen a
 </div>
 
 Disclaimer : Cloned for educational purposes only.
+=======
+# face-clone
+>>>>>>> 2fe738738593939be274779e9ed26a0e3df46361
